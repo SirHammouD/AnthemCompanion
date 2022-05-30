@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RangerActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/custom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/test2"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/white"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/adView"
+            android:layout_below="@+id/custom_bar"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="187dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/storm_pic"
+                        android:contentDescription="@string/todo" />
+
+                    <TextView
+                        android:id="@+id/intro2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:text="@string/storm_dec"
+                        android:textColor="@color/black"
+                        android:textSize="18sp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/storm_table"
+                    android:contentDescription="@string/todo" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/storm_javelin_abilities"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:stretchColumns="*">
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/melee_ability_storm"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/fiery_strike"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:stretchColumns="*">
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/ultimate_ability_storm"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/elemental_storm"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/storm_ulti"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/storm_javelin_gear"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:stretchColumns="*">
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="122dp"
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/blast_seals"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/ice_storm"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/flame_burst"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/ice_blast"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/living_flame"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/lightning_strike"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:stretchColumns="*">
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="122dp"
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/focus_seals"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/frost_shards"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/burning_orb"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/shock_burst"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/glacial_spear"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/arc_burst"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:stretchColumns="*">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="165dp"
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/support_seals"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/quickening_field"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="3dip"
+                            android:text="@string/wind_wall"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:foregroundGravity="bottom|center"
+            android:gravity="bottom|center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-1272284068166713/8471463725">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

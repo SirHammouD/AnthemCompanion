@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anthem_white_background"
+    android:id="@+id/drawerLayout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/custom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/test2"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Wallpapers"
+            app:titleTextColor="@color/white" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="@android:integer/config_shortAnimTime"
+                android:fadingEdge="horizontal|vertical"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:scaleType="centerCrop" />
+
+                    <ImageButton
+                        android:id="@+id/imageBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@mipmap/round_get_app_white_24" />
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="@android:integer/config_shortAnimTime"
+                android:fadingEdge="horizontal|vertical"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageButton
+                        android:id="@+id/imageBtn1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@mipmap/round_get_app_white_24" />
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="@android:integer/config_shortAnimTime"
+                android:fadingEdge="horizontal|vertical"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageButton
+                        android:id="@+id/imageBtn2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@mipmap/round_get_app_white_24" />
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="@android:integer/config_shortAnimTime"
+                android:fadingEdge="horizontal|vertical"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageButton
+                        android:id="@+id/imageBtn3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@mipmap/round_get_app_white_24" />
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="@android:integer/config_shortAnimTime"
+                android:fadingEdge="horizontal|vertical"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageButton
+                        android:id="@+id/imageBtn4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@mipmap/round_get_app_white_24" />
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:alpha="@android:integer/config_shortAnimTime"
+                android:fadingEdge="horizontal|vertical"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:scaleType="centerCrop" />
+
+                    <ImageButton
+                        android:id="@+id/imageBtn5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@mipmap/round_get_app_white_24" />
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

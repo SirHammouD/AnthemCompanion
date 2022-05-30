@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="@color/colorPrimary">
+
+
+    <group android:id="@+id/grp1"
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/round_home_white_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@mipmap/round_public_white_24"
+            android:title="News" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@mipmap/round_map_white_24"
+            android:title="Map" />
+    </group>
+
+    <group android:id="@+id/grp2"
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_javelins"
+            android:icon="@mipmap/round_supervisor_account_white_24"
+            android:title="Javelins" />
+
+        <item
+            android:id="@+id/nav_crafting"
+            android:icon="@mipmap/round_build_white_24"
+            android:title="Crafting"/>
+
+        <item
+            android:id="@+id/nav_strongholds"
+            android:icon="@mipmap/round_whatshot_white_24"
+            android:title="Strongholds" />
+
+
+
+    </group>
+
+    <group android:id="@+id/grp3"
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_wallpaper"
+            android:icon="@mipmap/round_image_white_24"
+            android:title="Wallpapers" />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@mipmap/round_help_outline_white_24"
+            android:title="About" />
+
+    </group>
+
+</menu>

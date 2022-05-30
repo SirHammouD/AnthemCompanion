@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.hammy.anthemcompanion">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/test_icon_anthem"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/test_icon_anthem_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RangerActivity"
+            android:label="Ranger"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".StormActivity"
+            android:label="Storm"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".InterceptorActivity"
+            android:label="Interceptor"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ColossusActivity"
+            android:label="Colossus"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DetailsActivity"
+            android:label="Details"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".WeaponsActivity"
+            android:label="Weapons List"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SigilsActivity"
+            android:label="Sigils List"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".GearsActivity"
+            android:label="Gears List"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TyrantMineActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TempleScarActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".HeartRageActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ComponentsActivity"
+            android:label="Components List"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1272284068166713~7761017280"/>
+
+    </application>
+
+</manifest>
